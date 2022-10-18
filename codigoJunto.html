@@ -12,23 +12,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="/js/script.js"></script>
     <style>
-        .blue{
-            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-            box-shadow: 0 0 20px 0 blue;
+        .yellow{
+            background: linear-gradient(hsl(025, 76%, 16%), hsl(125, 90%, 60%), hsl(130, 56%, 42%));
+            box-shadow: 0 0 20px 0 green;
         }
         .container{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: right;
+            align-items: right;
             margin-top: 100px;
         
         }
         h2 {
-            text-align: center;
+            text-align: center left;
 
         }
         body{
-            background-color: burlywood;
+            background-color: red;
+            
         }
     </style>
 
@@ -167,13 +168,13 @@
     </script>
 
     <div class="container">
-        <div class="blue">
-        <h2>Fibonacci: <input type="text" id="fibinput"> <button style="color: red" onclick="alert(fibonacci(document.getElementById('fibinput').value))">Calcular</button></h2>
-        <h2>Somar numeros: <input type="text" id="somainput"> <button style="color: red" onclick="alert(somatorio(document.getElementById('somainput').value))">Calcular</button></h2>
-        <h2>Verificar se é primo: <input type="text" id="primoinput"> <button style="color: red" onclick="alert(ehPrimo(document.getElementById('primoinput').value))">Calcular</button></h2>
-        <h2>Maximo divisor: <input type="text" id="mdcinput"> <button style="color: red" onclick="alert(maximoDivisor(document.getElementById('mdcinput').value))">Calcular</button></h2>
-        <h2>Contar inteiros: <input type="text" id="contarinput"> <button style="color: red" onclick="alert(contagem(document.getElementById('contarinput').value))">Contar</button></h2>
-        <h2>Conjunto de números: <input type="text" id="ordenarinput"> <button style="color: red" onclick="alert(ordenar(document.getElementById('ordenarinput').value))">Ordenar</button></h2>
+        <div class="yellow">
+        <h2>Fibonacci: <input type="text" id="fibinput"> <button style="color: green" onclick="alert(fibonacci(document.getElementById('fibinput').value))">Calcular</button></h2>
+        <h2>Somar numeros: <input type="text" id="somainput"> <button style="color: green" onclick="alert(somatorio(document.getElementById('somainput').value))">Calcular</button></h2>
+        <h2>Verificar se é primo: <input type="text" id="primoinput"> <button style="color: green" onclick="alert(ehPrimo(document.getElementById('primoinput').value))">Calcular</button></h2>
+        <h2>Maximo divisor: <input type="text" id="mdcinput"> <button style="color: green" onclick="alert(maximoDivisor(document.getElementById('mdcinput').value))">Calcular</button></h2>
+        <h2>Contar inteiros: <input type="text" id="contarinput"> <button style="color: green" onclick="alert(contagem(document.getElementById('contarinput').value))">Contar</button></h2>
+        <h2>Conjunto de números: <input type="text" id="ordenarinput"> <button style="color: green" onclick="alert(ordenar(document.getElementById('ordenarinput').value))">Ordenar</button></h2>
         </div>
     </div>
 
