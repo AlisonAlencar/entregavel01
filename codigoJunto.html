@@ -39,9 +39,13 @@
 
     <script>
         function fibonacci(n) {
-            return n < 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+    
+        fibonacci = [0, 1]
+        for (i = 2; i < n; i++) {
+            fibonacci.push(fibonacci[(i - 1)] + fibonacci[(i - 2)])
         }
-
+            alert(fibonacci);
+    }
         function somatorio(conjuntoDeNumeros) {
 
             var soma = 0;
@@ -169,7 +173,7 @@
 
     <div class="container">
         <div class="yellow">
-        <h2>Fibonacci: <input type="text" id="fibinput"> <button style="color: green" onclick="alert(fibonacci(document.getElementById('fibinput').value))">Calcular</button></h2>
+        <h2>Fibonacci: <input type="text" id="fibinput"> <button style="color: green" onclick="fibonacci(document.getElementById('fibinput').value)">Calcular</button></h2>
         <h2>Somar numeros: <input type="text" id="somainput"> <button style="color: green" onclick="alert(somatorio(document.getElementById('somainput').value))">Calcular</button></h2>
         <h2>Verificar se é primo: <input type="text" id="primoinput"> <button style="color: green" onclick="alert(ehPrimo(document.getElementById('primoinput').value))">Calcular</button></h2>
         <h2>Maximo divisor: <input type="text" id="mdcinput"> <button style="color: green" onclick="alert(maximoDivisor(document.getElementById('mdcinput').value))">Calcular</button></h2>
